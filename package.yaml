@@ -1,0 +1,48 @@
+name:                haskell-predict-best-price
+version:             0.1.0.0
+github:              "KaylaHood/haskell-predict-best-price"
+license:             BSD3
+author:              "Kayla Hood"
+maintainer:          "kaylahood1996@gmail.com"
+copyright:           "MIT License"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Machine Learning
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/KaylaHood/haskell-predict-best-price#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  haskell-predict-best-price-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-predict-best-price
+
+tests:
+  haskell-predict-best-price-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-predict-best-price
