@@ -1,1 +1,1 @@
-# haskell-predict-best-price
+# haskell-object-detection

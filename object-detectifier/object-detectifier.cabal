@@ -4,16 +4,16 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3a4a09e51b7e7367c02d8127877b97ff05cbddb3956c68ab6c2d060f306b40b5
+-- hash: efe5ad87b05325191467787c7abcb4fc8742f08c9cc3da3843646f4c98cbb5e0
 
-name:           haskell-predict-best-price
+name:           object-detectifier
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/KaylaHood/haskell-predict-best-price#readme>
-homepage:       https://github.com/KaylaHood/haskell-predict-best-price#readme
-bug-reports:    https://github.com/KaylaHood/haskell-predict-best-price/issues
+description:    Please see the README on GitHub at <https://github.com/KaylaHood/object-detectifier#readme>
+homepage:       https://github.com/KaylaHood/object-detectifier#readme
+bug-reports:    https://github.com/KaylaHood/object-detectifier/issues
 author:         Kayla Hood
 maintainer:     kaylahood1996@gmail.com
-copyright:      MIT License
+copyright:      Copyright © 2021 H‑E‑B, LP
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -23,40 +23,46 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/KaylaHood/haskell-predict-best-price
+  location: https://github.com/KaylaHood/object-detectifier
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_haskell_predict_best_price
+      Paths_object_detectifier
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , opencv
+    , warp
   default-language: Haskell2010
 
-executable haskell-predict-best-price-exe
+executable object-detectifier-exe
   main-is: Main.hs
   other-modules:
-      Paths_haskell_predict_best_price
+      Paths_object_detectifier
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskell-predict-best-price
+    , object-detectifier
+    , opencv
+    , warp
   default-language: Haskell2010
 
-test-suite haskell-predict-best-price-test
+test-suite object-detectifier-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_haskell_predict_best_price
+      Paths_object_detectifier
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskell-predict-best-price
+    , object-detectifier
+    , opencv
+    , warp
   default-language: Haskell2010

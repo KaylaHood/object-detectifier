@@ -1,10 +1,10 @@
-name:                haskell-predict-best-price
+name:                object-detectifier
 version:             0.1.0.0
-github:              "KaylaHood/haskell-predict-best-price"
+github:              "KaylaHood/object-detectifier"
 license:             BSD3
 author:              "Kayla Hood"
 maintainer:          "kaylahood1996@gmail.com"
-copyright:           "MIT License"
+copyright:           "Copyright © 2021 H‑E‑B, LP"
 
 extra-source-files:
 - README.md
@@ -12,21 +12,22 @@ extra-source-files:
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
-# category:            Machine Learning
+# category:            Artificial Intelligence
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/KaylaHood/haskell-predict-best-price#readme>
+description:         Please see the README on GitHub at <https://github.com/KaylaHood/object-detectifier#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- warp
 
 library:
   source-dirs: src
 
 executables:
-  haskell-predict-best-price-exe:
+  object-detectifier-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -34,10 +35,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - haskell-predict-best-price
+    - object-detectifier
 
 tests:
-  haskell-predict-best-price-test:
+  object-detectifier-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -45,4 +46,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - haskell-predict-best-price
+    - object-detectifier

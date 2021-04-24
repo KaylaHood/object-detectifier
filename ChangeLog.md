@@ -1,3 +1,3 @@
-# Changelog for haskell-predict-best-price
+# Changelog for haskell-object-detection
 
 ## Unreleased changes
