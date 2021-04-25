@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: efe5ad87b05325191467787c7abcb4fc8742f08c9cc3da3843646f4c98cbb5e0
+-- hash: 044b8c82ca93b96bc4b7cb454d609a3ab1c5531378ee081e06d6580766db0fe9
 
 name:           object-detectifier
 version:        0.1.0.0
@@ -27,14 +27,21 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      ApplicationController
+      Image
+      ImageRepository
   other-modules:
       Paths_object_detectifier
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
-    , opencv
+      HDBC
+    , HDBC-sqlite3
+    , base >=4.7 && <5
+    , gogol
+    , gogol-vision
+    , http-types
+    , wai
     , warp
   default-language: Haskell2010
 
@@ -46,9 +53,14 @@ executable object-detectifier-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      HDBC
+    , HDBC-sqlite3
+    , base >=4.7 && <5
+    , gogol
+    , gogol-vision
+    , http-types
     , object-detectifier
-    , opencv
+    , wai
     , warp
   default-language: Haskell2010
 
@@ -61,8 +73,13 @@ test-suite object-detectifier-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      HDBC
+    , HDBC-sqlite3
+    , base >=4.7 && <5
+    , gogol
+    , gogol-vision
+    , http-types
     , object-detectifier
-    , opencv
+    , wai
     , warp
   default-language: Haskell2010

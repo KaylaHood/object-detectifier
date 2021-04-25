@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "robotic-subject-311706",
+  "private_key_id": "e1b8744a685918985d31e15ec56918b019c52d07",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPkY5E5yxeQl6Q\nBsygOjBok58P6xLfmbYQGX1Rwl4NvMdkmyGedic3IseL6XDnYuttfNqcNamX6Ggs\nhBY6HphMxYNEHt1P1AGEQVoNKNhz4+zJ9n03SNCuvnAfHjErUfjGk7Yb5gBiQGXs\nilKL+RJYgf/pcoHh+2z5sCpCBpZYge+LOM/4/IEIfwJcbvhcxTrk2wSsdEN1B5vM\nPaMC3A9TbwCJ0Oh2dUP71EcDwtZdX77nwZ09vZQIevFCtC3b6Ysgz4/WQClUey5V\ntvWnz4gtt7U8QjpKEDUnbzhmkjxSLgs0Bvw8Ru7ilUnbfdWmFmAwww7mg9yDODln\n2R7CXStRAgMBAAECggEAPo/HirsGo25rpAt4l36SYqLD2X9n0983gci8/eyQfqF8\nk7UyP9mq3jJsZJ46unMVNI3iMhz2feO9qlUxgdkA3HrXoquO1uW2g09TPg4ml1+G\nWiUh/ozC4ThjAO4PsdfmHKwewm/jg7mXPuE+GhQ7VFPyd0FdJmiqouNXCUmE/S25\nW5p2HfAoGguzEPJfObd4YLqtucPxF/v7Uo4oCQTHBES/pVP/i/UMorCdJ49BbkEX\nmOOmCnIrVAeMITE5QwqO3Tv+Q5x5qm3Ukx9pR6Xyg9est7MOZIua5ihy6rmh2Jfh\nEAUW+BserGsqtSE0UKVjJDVV/bMwB6FbNQEdL5ZG1QKBgQD32924+nmIrUlda6YE\nS/o1etcF++Gk1eTgU4ljc8QSI2Kj6nWF8SN3W8GVUccGS9uVaVbVyS4uXvG3rfgy\nvFElgvihkxrlvPB8Tsy5iv4xbsbcyDc4aEn/zIcw2jDaPYGe7aklIwhUMmo/8Gwp\nY+FcVfwCihmEIAcv+0wdncHA8wKBgQDWYugjQx5cVysofV63sk4jBnf7QzUGHyDS\nvaU4TI8oAdKjifbrjEwaJ92CEJY0v51pAuRBMBo3GBzjxpzsOpfrLDHWy/ff06GR\n4v1pFUxGnQJIUdTVR1D6nDh1aJPePDSMAJ0Sjot8dVTfRptoFzWgfr3ynzI+o2Cx\na6pUorPTqwKBgQDwmevX3r0PYjevign0bdSLCZ2lX2cg3cl5wV3CvuP8P4FHYReI\nWBZ3jQiT7HhoskaL+V+j09ESjnPSO/yNM6UJ5uN35RbdINXJtayiCDzMu54rP+fq\nx8HdoCszzvpRQBeNsWLae/Ff2jitrLMyUpS3T3h89pXiXjzb5PN0ZGlq5QKBgFj2\nA/QV9vREa7FKjNJXWBsqpQELu2YF5r3sWjIJeuIUF48rQd4ugqnb3wwIy/upg60+\nuO7gAhDYnaxbD2TrT30UAr5qNzqW/BWohpVjdBpdLsRJyLKT/GNyDe+SbMGsY/Ww\nj31Sz0je+1AHYZeJAgTOcw3Jx7S8YPReg/jI5ywvAoGBAIekd8QqOoLDaNFIKIIt\nu7vB1nAtCzY4MXyMQ6wfii2Dd8KI+RkyYrUL/BDVTa8ke/nzspjGt0DIc1qH1bC3\nZmxll+2MnWswXPjAWtEYM6oXHyu9MK6Hzi6vDj1pECR8un3ttOWS4nEkYJMf3Bdh\nDprX27qLKhEFtPM0KDuqkbHp\n-----END PRIVATE KEY-----\n",
+  "client_email": "haskellobjectdetectifier@robotic-subject-311706.iam.gserviceaccount.com",
+  "client_id": "114409631377948351405",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/haskellobjectdetectifier%40robotic-subject-311706.iam.gserviceaccount.com"
+}

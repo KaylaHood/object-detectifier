@@ -22,6 +22,12 @@ description:         Please see the README on GitHub at <https://github.com/Kayl
 dependencies:
 - base >= 4.7 && < 5
 - warp
+- wai
+- http-types
+- gogol
+- gogol-vision
+- HDBC-sqlite3
+- HDBC
 
 library:
   source-dirs: src
