@@ -2,7 +2,7 @@
 
 Developed using GHC v8.8.4 and Cabal v3.2.0.0
 
-##Requirements:
+## Requirements:
 * Haskell Stack Build Tool version 2.5.1 or greater
 * Glasgow Haskell Compiler (GHC) version 8.8.4 (or greater, though I ran into build issues with newer versions due to my OS)
 * Cabal version 3.2.0.0 (or greater, though I had the same issues with Cabal as I did with GHC re: my OS)
@@ -11,13 +11,13 @@ Developed using GHC v8.8.4 and Cabal v3.2.0.0
 * A Service Account created on your GCP Console for access to the Cloud Vision API.  
   Place the json private key in the location `~/.config/gcloud` and name the file `application_default_credentials.json`
 
-##Build instructions:
+## Build instructions:
 * In stack.yaml, change `extra-include-dirs` and `extra-lib-dirs` to point to your machine's sqlite3 installation and source folders.  
   The location(s) provided must contain the source code (C libs) and sqlite3.exe (if they are in separate folders, provide multiple paths in the yaml).
 * Build the project by running `stack build --test --haddock --no-haddock-hyperlink-source` from the project directory.
 * Run with `stack run` - the server has started when "Listening on port 3000" is printed to the console.
 
-##API endpoints:
+## API endpoints:
 *NOTE: Responses are NOT in JSON format yet. They are all plain text. Also, many errors are not properly handled - though the server should not stop running if an error occurs.*
 
 * GET /images  
