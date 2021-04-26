@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 044b8c82ca93b96bc4b7cb454d609a3ab1c5531378ee081e06d6580766db0fe9
+-- hash: 7a6249455105c5be3636836e0147eb0e2bc5dab9cb7f71d1bb30223dc065d7b1
 
 name:           object-detectifier
 version:        0.1.0.0
@@ -28,8 +28,8 @@ source-repository head
 library
   exposed-modules:
       ApplicationController
-      Image
       ImageRepository
+      JsonObjects
   other-modules:
       Paths_object_detectifier
   hs-source-dirs:
@@ -37,11 +37,24 @@ library
   build-depends:
       HDBC
     , HDBC-sqlite3
+    , aeson
     , base >=4.7 && <5
+    , base64-bytestring
+    , bytestring
+    , conduit
+    , conduit-extra
     , gogol
     , gogol-vision
+    , http-client
+    , http-client-tls
     , http-types
+    , lens
+    , resourcet
+    , split
+    , text
+    , utf8-string
     , wai
+    , wai-conduit
     , warp
   default-language: Haskell2010
 
@@ -55,12 +68,25 @@ executable object-detectifier-exe
   build-depends:
       HDBC
     , HDBC-sqlite3
+    , aeson
     , base >=4.7 && <5
+    , base64-bytestring
+    , bytestring
+    , conduit
+    , conduit-extra
     , gogol
     , gogol-vision
+    , http-client
+    , http-client-tls
     , http-types
+    , lens
     , object-detectifier
+    , resourcet
+    , split
+    , text
+    , utf8-string
     , wai
+    , wai-conduit
     , warp
   default-language: Haskell2010
 
@@ -75,11 +101,24 @@ test-suite object-detectifier-test
   build-depends:
       HDBC
     , HDBC-sqlite3
+    , aeson
     , base >=4.7 && <5
+    , base64-bytestring
+    , bytestring
+    , conduit
+    , conduit-extra
     , gogol
     , gogol-vision
+    , http-client
+    , http-client-tls
     , http-types
+    , lens
     , object-detectifier
+    , resourcet
+    , split
+    , text
+    , utf8-string
     , wai
+    , wai-conduit
     , warp
   default-language: Haskell2010

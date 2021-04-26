@@ -23,11 +23,24 @@ dependencies:
 - base >= 4.7 && < 5
 - warp
 - wai
+- wai-conduit
+- conduit-extra
+- conduit
 - http-types
 - gogol
 - gogol-vision
 - HDBC-sqlite3
 - HDBC
+- text
+- split
+- bytestring
+- base64-bytestring
+- utf8-string
+- http-client
+- aeson
+- lens
+- resourcet
+- http-client-tls
 
 library:
   source-dirs: src

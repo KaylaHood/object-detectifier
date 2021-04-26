@@ -1,16 +1,17 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Main where
 
 import ApplicationController (app)
-import Network.Wai.Handler.Warp (run)
-import ImageRepository (getImagesByTag)
+import Network.Wai.Handler.Warp
 
-{-main :: IO ()
+main :: IO ()
 main = do
   let port = 3000
   putStrLn $ "Listening on port " ++ show port
-  run port app-}
+  run port app
   
-main :: IO ()
-main = do
-  images <- getImagesByTag "dog"
-  putStrLn $ show images
+--main :: IO ()
+--main = do
+--  images <- getImagesByTag "dog"
+--  putStrLn $ show images
